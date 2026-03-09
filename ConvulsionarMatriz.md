@@ -2,14 +2,6 @@
 
 En la pizarra aparece una **imagen 3×3** representada como matriz:
 
-[
-\begin{matrix}
-x_1 & x_2 & x_3 \
-x_4 & x_5 & x_6 \
-x_7 & x_8 & x_9
-\end{matrix}
-]
-
 Cada (x_i) es **un pixel de la imagen**.
 
 Luego se aplica un **filtro o kernel 2×2**.
@@ -19,18 +11,6 @@ La convolución consiste en:
 1. Colocar el filtro sobre una parte de la imagen
 2. Multiplicar elemento por elemento
 3. Sumar los resultados
-
-Ejemplo conceptual:
-
-[
-Conv = \sum (x_{ij} \cdot w_{ij}) + bias
-]
-
-donde:
-
-* (x) = valores de la imagen
-* (w) = pesos del filtro
-* **bias** = sesgo
 
 También aparece en la pizarra:
 
@@ -99,10 +79,6 @@ Cada filtro detecta algo distinto:
 En la parte izquierda aparece **softmax**.
 
 Softmax convierte los valores finales en **probabilidades**.
-
-[
-Softmax(x_i)=\frac{e^{x_i}}{\sum e^{x}}
-]
 
 Ejemplo:
 
