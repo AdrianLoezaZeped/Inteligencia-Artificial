@@ -91,7 +91,6 @@ Emulamos las reglas de truncamiento de tokens antes de realizar la selección fi
 * El estado del texto muta en memoria y se actualiza a: `"LA NIÑA PEQUEÑA COME FRUTA FRESCA"`.
 
 ---
-
 ##  Actividad 14: Ciclo de Autoregresión Completo (The Generation Loop)
 
 La Actividad 14 consolida el funcionamiento global de la arquitectura en un ciclo infinito de retroalimentación:
