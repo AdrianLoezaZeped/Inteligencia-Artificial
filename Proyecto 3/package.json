@@ -1,0 +1,45 @@
+{
+  "name": "rnn-keras-autocomplete",
+  "displayName": "Copilot RNN Keras",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "main": "./extension.js",
+  "activationEvents": [
+    "onCommand:rnnKeras.complete",
+    "onCommand:rnnKeras.suggest"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "rnnKeras.complete",
+        "title": "RNN Copilot: Autocompletar"
+      },
+      {
+        "command": "rnnKeras.suggest",
+        "title": "RNN Copilot: Sugerencias"
+      }
+    ],
+    "configuration": {
+      "title": "Configuración de RNN Keras",
+      "properties": {
+        "rnnKeras.pythonPath": {
+          "type": "string",
+          "default": "python",
+          "description": "Comando para ejecutar Python"
+        },
+        "rnnKeras.serverScript": {
+          "type": "string",
+          "default": "",
+          "description": "Ruta absoluta a tu archivo server_stdio.py"
+        },
+        "rnnKeras.maxNew": {
+          "type": "integer",
+          "default": 60,
+          "description": "Caracteres máximos a generar"
+        }
+      }
+    }
+  }
+}
